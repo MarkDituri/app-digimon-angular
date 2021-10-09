@@ -1,0 +1,48 @@
+<!-- Special Deals Items -->
+<div class="specials-wrap">
+	<div class="cont specials">
+		<h2>Digimons</h2>
+		<p class="specials-count">350 ITEMS</p>
+		<div class="specials-list">
+			<div class="special special-pseudo">
+				<a href="#" class="special-link"></a>
+			</div>
+
+			<div class="special special-first">
+				<a href="product.html" class="special-link">
+					<p class="special-img">
+						<img src="assets/img/digimons/metalgarurumon.png" alt="">
+					</p>
+					<h3><span>Nulla lacinia lectus</span></h3>
+				</a>
+				<p class="special-info">
+					<a href="#" class="special-categ">Suspensions</a>
+					<span class="special-price">$200</span>
+					<del>$400</del>
+					<a href="#" class="special-add">+ Add to cart</a>
+				</p>
+			</div>
+
+			<div *ngFor="let digimon of digimonSerice.digimons" class="special">
+        <a href="product.html" class="special-link">
+          <p class="special-img">
+            <img [src]="digimon.img" alt="">
+          </p>
+          <h3><span>{{digimon.name}}</span></h3>
+        </a>
+        <p class="special-info">
+          <a href="#" class="special-categ">{{digimon.level}}</a>
+          <span class="special-price">$312</span>
+          <a href="#" class="special-add">+ Add to cart</a>
+        </p>
+			</div>
+
+		</div>
+
+		<p class="special-more">
+			<a href="#">show more</a>
+		</p>
+		<span class="special-line1"></span>
+		<span class="special-line2"></span>
+	</div>
+</div>
